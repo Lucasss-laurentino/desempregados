@@ -97,34 +97,35 @@
             </div>
         </div>
         <!--- Fim Modal --->
-    </body>
 
-    <footer class="text-center text-lg-start bg-white borda-nav">
-        <section class="">
-            <div class="container text-center text-md-start mt-5">
-                <div class="row mt-3">
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                        <h4 class="titulo-card">Política & termos</h4>
+        <footer class="text-center text-lg-start bg-white borda-nav bottom-fixed">
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <h4 class="titulo-card">Política & termos</h4>
+                            <p>
+                                <a href="#!" class="text-decoration-underline">Política de privacidade</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-decoration-underline">Termos de uso</a>
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h4 class="titulo-card">Contato</h4>
                         <p>
-                            <a href="#!" class="text-decoration-underline">Política de privacidade</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-decoration-underline">Termos de uso</a>
+                            contato@desempregadosbr.com
                         </p>
                     </div>
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                    <h4 class="titulo-card">Contato</h4>
-                    <p>
-                        contato@desempregadosbr.com
-                    </p>
                 </div>
+                </div>
+            </section>
+            <div class="text-center font p-4 bg-white">
+                <p>© 2022 Copyright: Desempregadosbr.com</p>
             </div>
-            </div>
-        </section>
-        <div class="text-center font p-4 bg-white">
-            <p>© 2022 Copyright: Desempregadosbr.com</p>
-        </div>
-    </footer>
+        </footer>
+
+    </body>
 
     <script src="{{ asset('js/jquery.js') }}"></script>
     @if(session()->get('user') === null)

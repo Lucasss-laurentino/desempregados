@@ -3,7 +3,7 @@
 
 @section('content')
 
-<main style="height: 80vh;">
+<main style="height: 90%">
             <div class="container d-flex justify-content-center mt-4">
                 <ul class="list-group" style="width: 90%;">
                     <!--- Card --->

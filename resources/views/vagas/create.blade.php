@@ -54,7 +54,7 @@
                         </div>
                         <div class="col-12 col-md-12 col-lg-6 p-0">
                             <div class="form-check form-switch mx-2">
-                                <input class="form-check-input" type="checkbox" name="vale-alimentacao" value="vale alimentacao" id="vale-alimentacao">
+                                <input class="form-check-input" type="checkbox" name="vale-alimentacao" value="vale alimentação" id="vale-alimentacao">
                                 <label class="form-check-label" for="vale-alimentacao">Vale alimentação</label>
                             </div>
                         </div>
@@ -62,7 +62,7 @@
                     <div class="row w-100 m-0">
                         <div class="col-12 col-md-12 col-lg-6 p-0">
                             <div class="form-check form-switch mx-2">
-                                <input class="form-check-input" type="checkbox" name="vale-refeicao" value="vale refeicao" id="vale-refeicao">
+                                <input class="form-check-input" type="checkbox" name="vale-refeicao" value="vale refeição" id="vale-refeicao">
                                 <label class="form-check-label" for="vale-refeicao">
                                     Vale refeição
                                 </label>
@@ -70,7 +70,7 @@
                         </div>
                         <div class="col-12 col-md-12 col-lg-6 p-0">
                             <div class="form-check form-switch mx-2">
-                                <input class="form-check-input" type="checkbox" name="refeicao-local" id="refeicao-local" value="refeicao no local">
+                                <input class="form-check-input" type="checkbox" name="refeicao-local" id="refeicao-local" value="refeição no local">
                                 <label class="form-check-label" for="refeicao-local">
                                     Refeição no local
                                 </label>
@@ -80,7 +80,7 @@
                     <div class="row w-100 m-0">
                         <div class="col-12 col-md-12 col-lg-6 p-0">
                             <div class="form-check form-switch mx-2">
-                                <input class="form-check-input" type="checkbox" name="cesta-basica" id="cesta-basica" value="cesta basica">
+                                <input class="form-check-input" type="checkbox" name="cesta-basica" id="cesta-basica" value="cesta básica">
                                 <label class="form-check-label" for="cesta-basica">
                                         Cesta básica
                                 </label>
@@ -88,7 +88,7 @@
                         </div>
                         <div class="col-12 col-md-12 col-lg-6 p-0">
                             <div class="form-check form-switch mx-2">
-                                <input class="form-check-input" type="checkbox" name="convenio-medico" id="convenio-medico" value="convenio medico">
+                                <input class="form-check-input" type="checkbox" name="convenio-medico" id="convenio-medico" value="convênio médico">
                                 <label class="form-check-label" for="convenio-medico">
                                         Convênio médico
                                 </label>
@@ -105,7 +105,7 @@
                             </div>
                             <div class="col-12 col-md-12 col-lg-6 p-0">
                                 <div class="form-check form-switch mx-2">
-                                    <input class="form-check-input" type="checkbox" name="convenio-faculdade" id="convenio-faculdade" value="convenio faculdade">
+                                    <input class="form-check-input" type="checkbox" name="convenio-faculdade" id="convenio-faculdade" value="convênio faculdade">
                                     <label class="form-check-label" for="convenio-faculdade">
                                         Convênio faculdade
                                     </label>
@@ -116,7 +116,7 @@
                         <div class="row w-100 m-0 p-0">
                             <div class="col-12 col-md-12 col-lg-6 p-0">
                                 <div class="form-check form-switch mx-2">
-                                    <input class="form-check-input" type="checkbox" name="auxilio-creche" id="auxilio-creche" value="auxilio creche">
+                                    <input class="form-check-input" type="checkbox" name="auxilio-creche" id="auxilio-creche" value="auxílio creche">
                                     <label class="form-check-label" for="auxilio-creche">
                                             Auxílio creche
                                     </label>
