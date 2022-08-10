@@ -1,0 +1,79 @@
+.font {
+    font-weight: bolder;
+    color: #577D72;
+}
+.select-color {
+    color: #577D72;
+}
+.borda-nav {
+    border-top: 1px solid #577D72;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #577D72;
+}
+
+.items-list {
+    color: #577D72;
+    font-weight: bolder;
+}
+
+.border-modal {
+    height: 200px;
+    border-top: none;
+    border-right: 1px solid #577D72;
+    border-bottom: none;
+    border-left: none;
+}
+
+.hover-socialite:hover {
+    border: 1px solid #577D72;    
+}
+
+.border-card {
+    border-top: 1px solid rgb(223, 222, 222);
+    border-right: none;
+    border-bottom: 1px solid rgb(223, 222, 222);
+    border-left: 8px solid #577D72;
+
+    box-shadow: 4px 4px 10px rgb(209, 207, 207);
+
+}
+
+.titulo-card {
+    color: #577D72;
+    font-weight: bolder;
+}
+
+.border-input {
+    border-top:none;
+    border-right: none;
+    border-bottom: 2px solid #577D72;
+    border-left: none;
+
+    border-radius: 0%;
+
+}
+
+.border-input::placeholder {
+    color: #577D72;
+}
+
+.border-input:hover {
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.btn-ver-vaga {
+    width: 120px;
+    color: white;
+    background-color: #577D72;
+    font-weight: bolder;
+}
+
+.border-titulo {
+    height: 120px;
+    border-top: none;
+    border-right: 2px solid #577D72;
+    border-bottom: none;
+    border-left: none;
+}
