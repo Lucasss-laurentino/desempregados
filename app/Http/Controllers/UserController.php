@@ -49,4 +49,24 @@ class UserController extends Controller
 
         return to_route('vagas.index');
     }
+
+    public function minhasCandidaturas() {
+
+        $candidaturas = Candidatura::where('user_id', session()->get('user')['id'])->get();
+
+        $vagasId = [];
+        foreach($candidaturas as $candidatura) {
+
+            $vagasId[] = $candidatura->vaga_id;
+
+        }
+
+        $vagas = [];
+        foreach($vagasId as $vaga) {
+            $vagas[] = Vaga::where('id', $vaga)->first();
+        }
+
+        return view('vagas.candidaturas')->with('vagas', $vagas);
+
+    }
 }

@@ -47,7 +47,12 @@
                         </button>
                         @else
                         <a href="{{ route('vagas.create') }}" class="btn btn-sm bg-white titulo-card" >Públicar uma vaga</a>
-                        <a href="" class="btn btn-sm bg-white titulo-card" >Minhas candidaturas</a>
+                        
+                        <form action="{{ route('user.minhasCandidaturas') }}" method="post" class="d-inline">
+                            @csrf
+                            <button class="btn btn-sm bg-white titulo-card" >Minhas candidaturas</button>
+                        </form>
+                        
                         <a href="{{ route('vagas.logout') }}" class="btn btn-sm bg-white titulo-card" >Sair</a>
                         @endif
                     </li>

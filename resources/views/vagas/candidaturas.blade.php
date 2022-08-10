@@ -1,11 +1,10 @@
 @extends('layout.layout')
 
-
 @section('content')
 
 <main style="height: 90%">
     <div class="container d-flex justify-content-center mt-4">
-        <ul class="list-group" style="width: 90%;">
+        <ul class="list-group mb-3" style="width: 90%;">
             <!--- Card --->
             @isset($vagas)
             @foreach($vagas as $vaga)
@@ -28,13 +27,7 @@
                                     </svg>
                                     Ver vaga
                                 </button>
-                                @if(session()->get('user') != null)
-                                @foreach($candidaturas as $candidatura)
-                                @if($candidatura->vaga_id == $vaga->id)
                                 <p class="font mx-3 my-0">Candidatou-se</p>
-                                @endif
-                                @endforeach
-                                @endif
                             </div>
                         </form>
                     </div>
@@ -43,14 +36,10 @@
             @endforeach
             @endisset
             <!--- Fim Card --->
-            <div class="col-12 mt-2 mb-3 pb-3 pt-2">
-                <div class="d-flex justify-content-center text-success">
-                    {{ $vagas->links() }}
-                </div>
-            </div>
         </ul>
     </div>
 </main>
+
 
 
 @endsection

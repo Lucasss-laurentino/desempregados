@@ -33,3 +33,4 @@ Route::get('/logout', [VagaController::class, 'logout'])->name('vagas.logout');
 Route::get('/login/{provider}', [UserController::class, 'redirect'])->name('social.login');
 Route::get('/login/{provider}/callback', [UserController::class, 'callback'])->name('social.callback');
 Route::post('/users/upload/{id}', [UserController::class, 'upload'])->name('users.upload');
+Route::post('/candidaturas', [UserController::class, 'minhasCandidaturas'])->name('user.minhasCandidaturas');
