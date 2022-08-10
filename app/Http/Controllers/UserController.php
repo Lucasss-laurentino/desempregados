@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Laravel\Socialite\Facades\Socialite;
 use App\Models\User;
+use Illuminate\Support\Facades\Mail;
 use App\Models\Candidatura;
+use App\Mail\CurriculoAnexo;
 use App\Models\Vaga;
 
 class UserController extends Controller
@@ -35,6 +37,10 @@ class UserController extends Controller
     public function upload(Request $request, $id) {
 
         $vaga = Vaga::find($id);
+
+        $curriculo = $request->file('curriculo');
+        
+        Mail::to($vaga->email)->send(new CurriculoAnexo($vaga->titulo, $vaga->id, $curriculo));
 
         Candidatura::create([
             'user_id' => session()->get('user')['id'],
