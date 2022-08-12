@@ -112,10 +112,10 @@
                         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                             <h4 class="titulo-card">Política & termos</h4>
                             <p>
-                                <a href="#!" class="text-decoration-underline">Política de privacidade</a>
+                                <a href="{{ route('vagas.politica') }}" class="text-decoration-underline">Política de privacidade</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-decoration-underline">Termos de uso</a>
+                                <a href="{{ route('vagas.termos') }}" class="text-decoration-underline">Termos de uso</a>
                             </p>
                         </div>
                         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
