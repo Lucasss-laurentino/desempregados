@@ -52,8 +52,10 @@ class UserController extends Controller
 
     public function minhasCandidaturas() {
 
+        //Pegue todas candidaturas deste usuario
         $candidaturas = Candidatura::where('user_id', session()->get('user')['id'])->get();
 
+        // selecione todas vagas das candidaturas
         $vagasId = [];
         foreach($candidaturas as $candidatura) {
 
@@ -61,6 +63,7 @@ class UserController extends Controller
 
         }
 
+        // insira todas vagas neste array e envia para view
         $vagas = [];
         foreach($vagasId as $vaga) {
             $vagas[] = Vaga::where('id', $vaga)->first();
