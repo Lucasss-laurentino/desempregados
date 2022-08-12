@@ -7,10 +7,9 @@
 
     <div class="row justify-content-center w-100">
         <div class="col-6 mt-4 ">
-            <form action="{{ route('vagas.store') }}" method="post">
-                @csrf
+            <form id="formVaga">
                 <div class="form-group">
-                    <input type="email" class="form-control border-input mt-2" name="email" id="email" placeholder="Email do recrutador">
+                    <input type="email" class="form-control border-input mt-2" required name="email" id="email" placeholder="Email do recrutador">
                 </div>
                 <div class="form-group">
                    <input type="text" class="form-control border-input mt-2" name="titulo" id="titulo" placeholder="Titulo da vaga">
@@ -19,7 +18,7 @@
                     <input type="text" class="form-control border-input mt-2" name="cargo" id="cargo" placeholder="Cargo">
                 </div>
                 <div class="form-group">
-                    <select class="form-select form-select-sm border-input my-3 select-color" name="tipo_de_vaga" aria-label=".form-select-sm example">
+                    <select class="form-select form-select-sm border-input my-3 select-color" required name="tipo_de_vaga" aria-label=".form-select-sm example">
                         <option selected>Tipo de vaga</option>
                         <option value="Profissional">Profissional</option>
                         <option value="Estágio">Estágio</option>
@@ -27,7 +26,7 @@
                     </select>            
                 </div>
                 <div class="form-group">
-                    <select class="form-select form-select-sm border-input my-3 select-color" name="forma_de_trabalho" aria-label=".form-select-sm example">
+                    <select class="form-select form-select-sm border-input my-3 select-color" required name="forma_de_trabalho" aria-label=".form-select-sm example">
                         <option selected>Forma de trabalho</option>
                         <option value="Presencial">Presencial</option>
                         <option value="Remoto">Remoto</option>
@@ -142,7 +141,8 @@
                     <textarea class="form-control borda-nav" id="requisitos" name="requisitos" rows="3"></textarea>                
                 </div>
                 <div class="form-group my-5">
-                    <button class="btn btn-sm btn-ver-vaga">Públicar vaga</button>
+                    <p name="erro"></p>
+                    <button class="btn btn-sm btn-ver-vaga" id="publicarVaga">Públicar vaga</button>
                 </div>
             </form>
         </div>

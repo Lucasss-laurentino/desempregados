@@ -24,9 +24,9 @@ Route::get('/', function () {
 Route::resource('/vagas', VagaController::class)->only([
     'index',
     'create',
-    'store',
     'show'
 ]);
+Route::post('/store', [VagaController::class, 'store'])->name('vagas.store');
 Route::get('/logout', [VagaController::class, 'logout'])->name('vagas.logout');
 
 /* User */

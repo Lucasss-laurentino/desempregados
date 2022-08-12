@@ -12,6 +12,10 @@
     border-bottom: 1px solid #577D72;
 }
 
+.error {
+    color: red;
+}
+
 .items-list {
     color: #577D72;
     font-weight: bolder;

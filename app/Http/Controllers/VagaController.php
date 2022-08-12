@@ -36,6 +36,8 @@ class VagaController extends Controller
 
     public function store(Request $request) {
 
+        // Validar dados criando um novo request com minhas proprias regras
+
         // cadastrando vaga
         $vaga = Vaga::create([
             'email' => $request->email,
@@ -78,7 +80,8 @@ class VagaController extends Controller
 
         }
 
-        return to_route('vagas.index');
+        return $vaga->id;
+
     }
 
     public function logout(Request $request) {
@@ -131,5 +134,5 @@ class VagaController extends Controller
 
 
     }
-
+    
 }
