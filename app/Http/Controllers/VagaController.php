@@ -130,9 +130,12 @@ class VagaController extends Controller
         ->with('vaga', $vaga)
         ->with('beneficios', $beneficios)        
         ->with('candidatura', $candidatura);                        
-
-
-
     }
-    
+
+    public function politica() {
+        return view('vagas.politica');
+    }
+    public function termos() {
+        return view('vagas.termos');
+    }    
 }
