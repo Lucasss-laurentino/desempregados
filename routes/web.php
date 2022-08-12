@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Middleware\Logado;
+
 use App\Http\Controllers\VagaController;
 
 use App\Http\Controllers\UserController;
@@ -21,16 +23,19 @@ use App\Http\Controllers\UserController;
 Route::get('/', function () {
     return to_route('vagas.index');
 });
+Route::get('/vagas', [VagaController::class, 'index'])->name('vagas.index');
 Route::resource('/vagas', VagaController::class)->only([
-    'index',
     'create',
     'show'
-]);
-Route::post('/store', [VagaController::class, 'store'])->name('vagas.store');
-Route::get('/logout', [VagaController::class, 'logout'])->name('vagas.logout');
+])->middleware(Logado::class);
+Route::get('/politica_de_privacidade', [VagaController::class, 'politica'])->name('vagas.politica');
+Route::get('/termos', [VagaController::class, 'termos'])->name('vagas.termos');
+Route::post('/store', [VagaController::class, 'store'])->name('vagas.store')->middleware(Logado::class);
+Route::get('/logout', [VagaController::class, 'logout'])->name('vagas.logout')->middleware(Logado::class);
 
 /* User */
 Route::get('/login/{provider}', [UserController::class, 'redirect'])->name('social.login');
 Route::get('/login/{provider}/callback', [UserController::class, 'callback'])->name('social.callback');
-Route::post('/users/upload/{id}', [UserController::class, 'upload'])->name('users.upload');
+Route::post('/users/upload/{id}', [UserController::class, 'upload'])->name('users.upload')->middleware(Logado::class);
 Route::post('/candidaturas', [UserController::class, 'minhasCandidaturas'])->name('user.minhasCandidaturas');
+Route::get('/minhascandidaturas/{vagas}', [UserController::class, 'candidaturas'])->name('user.candidaturas');
