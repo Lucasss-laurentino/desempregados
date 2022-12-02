@@ -20,3 +20,7 @@
 <p>Listagem de vagas</p>
 
 ![vagas-index](https://user-images.githubusercontent.com/96303722/205310320-4817ac6d-aa9c-4516-8f0b-d8f2a97bbd8c.gif)
+
+<p>Cadastro de vaga</p>
+
+![cadastro-vaga](https://user-images.githubusercontent.com/96303722/205311458-5ffb77e4-f272-4d5d-961e-69375906450e.gif)
