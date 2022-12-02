@@ -17,6 +17,8 @@
 
 ## Funcionalidades
 
+<p>Login socialite</p>
+
 <p>Listagem de vagas</p>
 
 ![vagas-index](https://user-images.githubusercontent.com/96303722/205310320-4817ac6d-aa9c-4516-8f0b-d8f2a97bbd8c.gif)
@@ -33,3 +35,22 @@
    assim que enviado o currículo a vaga é marcada para o candidato saber que ja se candidatou para aquela vaga</p>
    
    ![candidatura](https://user-images.githubusercontent.com/96303722/205315622-f04f3c76-380d-499b-a089-ae1ef8ed00b2.png)
+
+## Rodando o projeto
+
+### Para instalar todas dependencias execute:
+
+<p>composer install</p>
+
+### Para configurar o arquivo env
+
+#### Renomeie o arquivo .env.example para .env
+<p>cp .env.example .env</p>
+
+<p>faça as configurações do bando no arquivo env da linha 11 a 16</p>
+
+<p>Para configurar o socialite use esse <a href='https://www.youtube.com/watch?v=_KomS815oWw&t=682s'>video</a> como referencia</p>
+
+### Para rodar o projeto execute
+
+<p>php artisan serve</p>
