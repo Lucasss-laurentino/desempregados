@@ -31,3 +31,5 @@
 
 <p>Quando é enviado um currículo para a vaga desejada, esse currículo é enviado por email para o email do contratante,
    assim que enviado o currículo a vaga é marcada para o candidato saber que ja se candidatou para aquela vaga</p>
+   
+   ![candidatura](https://user-images.githubusercontent.com/96303722/205315622-f04f3c76-380d-499b-a089-ae1ef8ed00b2.png)
