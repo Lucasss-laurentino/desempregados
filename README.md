@@ -24,3 +24,7 @@
 <p>Cadastro de vaga</p>
 
 ![cadastro-vaga](https://user-images.githubusercontent.com/96303722/205311458-5ffb77e4-f272-4d5d-961e-69375906450e.gif)
+
+<p>Detalhes da vaga e envio de curriculo</p>
+
+![detalhes-vaga](https://user-images.githubusercontent.com/96303722/205312860-61785b45-5c87-4ced-8c0b-2d1711125394.gif)
