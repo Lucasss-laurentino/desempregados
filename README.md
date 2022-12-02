@@ -28,3 +28,6 @@
 <p>Detalhes da vaga e envio de curriculo</p>
 
 ![detalhes-vaga](https://user-images.githubusercontent.com/96303722/205312860-61785b45-5c87-4ced-8c0b-2d1711125394.gif)
+
+<p>Quando é enviado um currículo para a vaga desejada, esse currículo é enviado por email para o email do contratante,
+   assim que enviado o currículo a vaga é marcada para o candidato saber que ja se candidatou para aquela vaga</p>
