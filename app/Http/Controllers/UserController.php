@@ -19,7 +19,7 @@ class UserController extends Controller
 
     public function callback(Request $request, $provider) {
 
-        $userProvider = Socialite::driver($provider)->user();
+        $userProvider = Socialite::driver($provider)->stateless()->user();
 
         $user = User::firstOrCreate(['email' => $userProvider->getEmail()], [
             'name' => $userProvider->getName(),
@@ -32,6 +32,7 @@ class UserController extends Controller
         $request->session()->put('user', $user);
 
         return to_route('vagas.index');
+
     }
 
     public function upload(Request $request, $id) {
