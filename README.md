@@ -49,6 +49,10 @@
 
 <p>faça as configurações do bando no arquivo env da linha 11 a 16</p>
 
+<p>Após configurar o bando execute: </p>
+
+<p>php artisan migrate</p>
+
 <p>Para configurar o socialite use esse <a href='https://www.youtube.com/watch?v=_KomS815oWw&t=682s'>video</a> como referencia</p>
 
 ### Para rodar o projeto execute
