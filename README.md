@@ -47,9 +47,9 @@
 #### Renomeie o arquivo .env.example para .env
 <p>cp .env.example .env</p>
 
-<p>faça as configurações do bando no arquivo env da linha 11 a 16</p>
+<p>faça as configurações do banco no arquivo env da linha 11 a 16</p>
 
-<p>Após configurar o bando execute: </p>
+<p>Após configurar o banco execute: </p>
 
 <p>php artisan migrate</p>
 
